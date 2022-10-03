@@ -16,6 +16,7 @@ body {
 }
 
 .grid-container {
+  border-radius: 80px;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -31,11 +32,12 @@ body {
   outline: none;
   background-color: #111;
   color: #eee;
+  transition: background-color 0.3s;
 }
 
-.grid-container > button:hover{
-    background-color: #eee;
-    color: #111;
+.grid-container > button:hover {
+  background-color: #eee;
+  color: #111;
 }
 
 .grid-container > .operator {
@@ -48,6 +50,7 @@ body {
 }
 
 .grid-container > .output {
+  border-radius: 10px 10px 0 0;
   grid-column: 1 / -1;
   background-color: #222;
   display: flex;
@@ -67,4 +70,12 @@ body {
 .grid-container > .output > .current-operand {
   color: white;
   font-size: 2.5rem;
+}
+
+.dot {
+  border-radius: 0 0 0 10px;
+}
+
+.equals {
+  border-radius: 0 0 10px 0;
 }
